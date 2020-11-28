@@ -30,7 +30,7 @@ function listOfPassword() {
 
    passwordLength1 = parseInt(passwordLength1);
    
-   while ( passwordLength1 <= 8 || passwordLength1 >= 128)
+   while ( passwordLength1 < 8 || passwordLength1 > 128)
 
         passwordLength1 = prompt("Length must be 8-128 characters. How many characters would you like your password to be?");
 
